@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import img2 from "@/public/assets/banner/constraction.jpeg";
+import Link from "next/link";
 
 const equipmentImages = [
   {
@@ -57,31 +58,87 @@ const PhotoEquipment = () => {
 
   return (
     <div>
-      <div className="relative -top-20">
-        <div className="relative pt-48 pb-12 bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
-          <div className="absolute inset-0 bg-black opacity-70">
-            <Image
-              className="relative object-cover w-full h-full"
-              src={img2}
-              alt="Construction"
-              layout="fill"
-            />
+      <section className="relative bg-gray-800 text-white">
+        <div className="relative">
+          <Image
+            src={img2}
+            alt="Banner"
+            className="object-cover w-full h-64 bg-black opacity-40"
+          />
+          <div className="absolute inset-0 flex flex-col justify-center items-center">
+            <h1 className="text-white text-4xl font-extrabold">
+              {" "}
+              Equipment Photo&apos;s
+            </h1>
+            <div className="text-sm text-white breadcrumbs">
+              <ul>
+                <li>
+                  <Link href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      className="w-4 h-4 mr-2 stroke-current"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                      ></path>
+                    </svg>
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      className="w-4 h-4 mr-2 stroke-current"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                      ></path>
+                    </svg>
+                    Equipments
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      className="w-4 h-4 mr-2 stroke-current"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                      ></path>
+                    </svg>
+                    Equipment Photo&apos;s
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <div className="mx-5 lg:container lg:mx-auto pb-20">
-        <div className="mb-10">
-          <h2 className="text-4xl font-bold pl-3 uppercase text-center">
-            Photos Of Equipment
-          </h2>
-        </div>
         <section className="py-6">
-          <div className="container mx-auto">
-            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="container mx-auto mt-10">
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {currentImages.map((image, index) => (
                 <div
                   key={index}
-                  className="relative group overflow-hidden rounded-lg shadow-lg"
+                  className="relative group overflow-hidden rounded-lg shadow-lg "
                 >
                   <img
                     className="object-cover w-full h-80 transition-transform duration-300 transform group-hover:scale-110"

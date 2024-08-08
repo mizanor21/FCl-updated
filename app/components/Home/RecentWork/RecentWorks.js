@@ -8,18 +8,18 @@ import UN from "@/public/assets/recentWorks/UN.jpg";
 import constraction from "@/public/assets/recentWorks/constraction1.jpg";
 
 const RecentWorks = () => {
-  const imageHeight = 300; // Set a uniform height for all images
+  const imageHeight = 300;
 
   return (
-    <div className="py-20" id="recent-works">
+    <div className="py-20 container mx-auto max-w-[1300px]" id="recent-works">
       <div className="mx-5 lg:container lg:mx-auto">
         <div>
-          <h2 className="text-3xl  border-l-4 border-green-700 hover:bg-opacity-50 pl-3 uppercase">
+          <h2 class="text-3xl text-center font-bold leading-tight mb-10 text-black sm:text-4xl lg:text-4xl">
             Recent Works
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
-          <div className="relative h-[300px] overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 rounded">
+          <div className="relative h-[300px] overflow-hidden rounded-md">
             <Image
               src={POS}
               alt="PSO Banglow, Dhaka Cantonment."
@@ -41,7 +41,7 @@ const RecentWorks = () => {
               </div>
             </div>
           </div>
-          <div className="relative h-[300px] overflow-hidden">
+          <div className="relative h-[300px] overflow-hidden rounded-md">
             <Image
               src={road}
               alt="7.5 km Flexible Road’s Pavement"
@@ -63,7 +63,7 @@ const RecentWorks = () => {
               </div>
             </div>
           </div>
-          <div className="relative h-[300px] overflow-hidden">
+          <div className="relative h-[300px] overflow-hidden rounded-md">
             <Image
               src={DS}
               alt="Jolshiri Drainage & Swerege Network"
@@ -85,7 +85,7 @@ const RecentWorks = () => {
               </div>
             </div>
           </div>
-          <div className="relative h-[300px] overflow-hidden">
+          <div className="relative h-[300px] overflow-hidden rounded-md">
             <Image
               src={NPB}
               alt="Construction of Non-Process Building (NPB)"
@@ -107,7 +107,7 @@ const RecentWorks = () => {
               </div>
             </div>
           </div>
-          <div className="relative h-[300px] overflow-hidden">
+          <div className="relative h-[300px] overflow-hidden rounded-md">
             <Image
               src={constraction}
               alt="Raw Water Flow Measurement Chamber"
@@ -129,7 +129,7 @@ const RecentWorks = () => {
               </div>
             </div>
           </div>
-          <div className="relative h-[300px] overflow-hidden">
+          <div className="relative h-[300px] overflow-hidden rounded-md">
             <Image
               src={UN}
               alt="UN Vehicle Repair Shed"

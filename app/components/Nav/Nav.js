@@ -98,7 +98,7 @@ const Nav = () => {
                   />
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title">Equipment Photo</h2>
+                  <h2 className="card-title">Equipment Photo&apos;s</h2>
                 </div>
               </Link>
             </div>
@@ -110,7 +110,7 @@ const Nav = () => {
         <Link href="/projects">Projects</Link>
       </li>
       <li>
-        <Link href="/career-page">Career</Link>
+        <Link href="/career">Career</Link>
       </li>
       <li>
         <Link href="/gallery">Gallery</Link>
@@ -122,7 +122,7 @@ const Nav = () => {
   );
 
   return (
-    <div className=" bg-white fancyNav sticky top-0 z-50 font-bold  text-black shadow-md">
+    <div className=" bg-white fancyNav sticky top-0 z-50   text-black shadow-md">
       <div className="navbar flex justify-between items-center">
         <div className="container mx-auto flex justify-between items-center">
           <div className="navbar-start flex items-center">
@@ -164,7 +164,7 @@ const Nav = () => {
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex flex-grow">
-            <ul className="menu menu-horizontal px-1  flex items-center">
+            <ul className="menu menu-horizontal px-1  flex items-center text-[18px]">
               {navItems}
             </ul>
           </div>

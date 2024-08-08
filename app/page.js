@@ -5,6 +5,9 @@ import Company from "./components/Home/Company/Company";
 import RecentWorks from "./components/Home/RecentWork/RecentWorks";
 import ShortAbout from "./components/Home/ShortAbout/ShortAbout";
 import ConstructionBuild from "./components/Home/WeBuild/ConstructionBuild";
+import HomeContact from "./components/Home/HomeContact/page";
+import Blog from "./components/Home/Blog/page";
+import ManageWorks from "./components/Home/ManageWorks/page";
 
 export default function Home() {
   return (
@@ -13,8 +16,10 @@ export default function Home() {
       <ShortAbout />
       <ConstructionBuild />
       <RecentWorks></RecentWorks>
-      {/* <Statistic></Statistic> */}
+      <ManageWorks></ManageWorks>
       <Company />
+      <HomeContact></HomeContact>
+      <Blog></Blog>
     </main>
   );
 }

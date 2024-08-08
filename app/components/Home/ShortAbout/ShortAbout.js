@@ -70,7 +70,7 @@ const ShortAbout = () => {
     // </div>
 
     <div>
-      <section class="py-10 bg-gray-50 sm:py-16 lg:py-24">
+      <section class="py-10  sm:py-16 lg:py-24">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div class="grid items-stretch gap-y-10 md:grid-cols-2 md:gap-x-20">
             <div class="relative grid grid-cols-2 gap-6 mt-10 md:mt-0">
@@ -107,14 +107,6 @@ const ShortAbout = () => {
                   </button>
                 </div>
               </div>
-
-              <div class="absolute -translate-x-1/2 left-1/2 -top-16">
-                <img
-                  class="w-32 h-32"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/features/2/round-text.png"
-                  alt=""
-                />
-              </div>
             </div>
 
             <div class="flex flex-col items-start xl:px-16 mt-5">
@@ -124,7 +116,7 @@ const ShortAbout = () => {
               <p className="font-bold text-xl mt-5">
                 A sister concern of MAN Enterprise
               </p>
-              <p class="mt-4 text-base leading-relaxed text-gray-600">
+              <p class="mt-4 text-base leading-relaxed text-gray-600 text-justify">
                 FAREES CONSTRUCTION LIMITED (FCL) is an independent engineering
                 construction company with an objective to provide complete and
                 international standard technical approach in the construction

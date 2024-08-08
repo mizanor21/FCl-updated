@@ -2,51 +2,51 @@
 import React from "react";
 import Image from "next/image";
 import img1 from "@/public/assets/banner/constraction.jpeg";
+import Link from "next/link";
 
 const jobOpenings = [
   {
+    id: 1,
     title: "Frontend Developer",
     location: "Remote",
     description:
       "Join our team to work on cutting-edge web applications using React and Tailwind CSS.",
-    link: "/apply",
   },
   {
+    id: 2,
     title: "Backend Developer",
     location: "New York, NY",
     description:
       "Work on scalable server-side applications with Node.js and MongoDB.",
-    link: "/apply",
   },
   {
+    id: 3,
     title: "Backend Developer",
     location: "New York, NY",
     description:
       "Work on scalable server-side applications with Node.js and MongoDB.",
-    link: "/apply",
   },
   {
+    id: 4,
     title: "Backend Developer",
     location: "New York, NY",
     description:
       "Work on scalable server-side applications with Node.js and MongoDB.",
-    link: "/apply",
   },
   {
+    id: 5,
     title: "Backend Developer",
     location: "New York, NY",
     description:
       "Work on scalable server-side applications with Node.js and MongoDB.",
-    link: "/apply",
   },
   {
+    id: 6,
     title: "Backend Developer",
     location: "New York, NY",
     description:
       "Work on scalable server-side applications with Node.js and MongoDB.",
-    link: "/apply",
   },
-  // Add more job openings here
 ];
 
 const CareerPage = () => {
@@ -57,23 +57,54 @@ const CareerPage = () => {
         <div className="relative">
           <Image
             src={img1}
-            alt="Career Opportunities"
-            layout="fill"
-            objectFit="cover"
-            className="absolute inset-0"
+            alt="Banner"
+            className="object-cover w-full h-64 bg-black opacity-50"
           />
-          <div className="relative p-16 text-center">
-            <h1 className="text-5xl font-extrabold mb-4">Join Our Team</h1>
-            <p className="text-lg mb-8">
-              We are always looking for talented and passionate individuals to
-              join our growing team.
-            </p>
-            <a
-              href="#apply"
-              className="inline-block bg-green-800 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-blue-700"
-            >
-              See Openings
-            </a>
+          <div className="absolute inset-0 flex flex-col justify-center items-center">
+            <h1 className="text-white text-4xl font-extrabold">
+              {" "}
+              Build your career
+            </h1>
+            <div className="text-sm text-white breadcrumbs">
+              <ul>
+                <li>
+                  <Link href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      className="w-4 h-4 mr-2 stroke-current"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                      ></path>
+                    </svg>
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      className="w-4 h-4 mr-2 stroke-current"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                      ></path>
+                    </svg>
+                    Career
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -93,12 +124,10 @@ const CareerPage = () => {
                 <h3 className="text-2xl font-semibold mb-2">{job.title}</h3>
                 <p className="text-gray-600 mb-4">{job.location}</p>
                 <p className="text-gray-800 mb-4">{job.description}</p>
-                <a
-                  href={job.link}
-                  className="inline-block bg-green-800 text-white px-4 py-2 rounded-md text-lg font-semibold hover:bg-blue-700"
-                >
-                  Apply Now
-                </a>
+                {/* Open the modal using document.getElementById('ID').showModal() method */}
+                <Link href={`career/${job.id}`} className="btn">
+                  Details
+                </Link>
               </div>
             ))}
           </div>

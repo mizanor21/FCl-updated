@@ -1,21 +1,63 @@
 import Image from "next/image";
 import React from "react";
 import img1 from "@/public/assets/contact.jpg";
+import Link from "next/link";
 
 const Page = () => {
   return (
     <div>
-      <div className="relative -top-20">
-        <div class="relative pt-48 pb-12 bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
-          <div class="absolute inset-0 bg-black opacity-70">
-            <Image
-              class="relative object-cover w-full h-full"
-              src={img1}
-              alt="Construction"
-            />
+      <section className="relative bg-gray-800 text-white">
+        <div className="relative">
+          <img
+            src="https://img.freepik.com/premium-photo/warm-bright-banner-construction-site-with-builder-sunset-background-generated-by-ai_906809-1233.jpg"
+            alt="Banner"
+            className="object-cover w-full h-64 bg-black opacity-30"
+          />
+          <div className="absolute inset-0 flex flex-col justify-center items-center">
+            <h1 className="text-white text-4xl font-extrabold"> Contact Us</h1>
+            <div className="text-sm text-white breadcrumbs">
+              <ul>
+                <li>
+                  <Link href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      className="w-4 h-4 mr-2 stroke-current"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                      ></path>
+                    </svg>
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      className="w-4 h-4 mr-2 stroke-current"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                      ></path>
+                    </svg>
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <section class="bg-white dark:bg-gray-900">
         <div class="container px-6 py-12 mx-auto">
           <div class="lg:flex lg:items-center lg:-mx-6">

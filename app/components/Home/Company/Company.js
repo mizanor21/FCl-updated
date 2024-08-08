@@ -22,7 +22,7 @@ import brand20 from "@/public/assets/company/wasa.svg";
 import Image from "next/image";
 const Company = () => {
   return (
-    <div className="my-20 bg-slate-50 py-20">
+    <div className=" bg-slate-50 py-20">
       <h3 className="text-center mb-10 text-4xl font-semibold text-[#185C5D]">
         Our Valuable Clients
       </h3>

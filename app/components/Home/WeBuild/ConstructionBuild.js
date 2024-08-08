@@ -16,73 +16,60 @@ const ConstructionBuild = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className=" py-20">
-        <div className="mx-5 lg:container lg:mx-auto lg:max-w-[1200px]">
-          <div>
-            <h2 className="text-3xl  border-l-4 border-green-500 pl-3 uppercase">
-              What We Build
-            </h2>
+      <section class="container mx-auto max-w-[1300px]">
+        <h2 class="text-3xl font-bold leading-tight mb-4 text-black sm:text-4xl lg:text-4xl">
+          What We Build
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="rounded overflow-hidden shadow-lg my-2">
+            <img
+              class="w-full h-60"
+              src="https://i.pinimg.com/originals/94/41/f2/9441f2efd20b16f02e73b25b43181a8c.jpg"
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p class="text-grey-darker text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 text-justify">
-            <div className="p-10 border hover:border-black duration-1000 bg-white">
-              <Image
-                src={highway}
-                className="w-24 mb-20"
-                alt="Building"
-              ></Image>
-              <div className="flex-grow">
-                <h3 className="text-2xl font-bold text-gray-900">
-                  Highway Expansion
-                </h3>
-                <p className="text-lg text-gray-600 mt-3">
-                  Expansion of the main highway with two additional lanes to
-                  improve traffic flow and include updated signals and sound
-                  barriers.
-                </p>
-              </div>
-              <button className="border border-black hover:bg-black hover:text-white duration-500   rounded-full px-5 py-2 mt-10 flex items-center">
-                Learn More <GoArrowUpRight className="font-bold text-xl" />
-              </button>
+
+          <div class="rounded overflow-hidden shadow-lg my-2">
+            <img
+              class="w-full h-60"
+              src="https://media.istockphoto.com/id/1332558192/photo/three-multi-ethnic-construction-workers-chatting.jpg?s=612x612&w=0&k=20&c=m6Sevw_6Xw-5LhpnT1C_P6UitIo04em3lhjfx-BGsKg="
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p class="text-grey-darker text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
             </div>
-            <div className="p-10 border hover:border-black duration-1000 bg-white">
-              <Image src={road} className="w-24 mb-20" alt="Building"></Image>
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900">
-                  Bridge Construction
-                </h3>
-                <p className="text-lg text-gray-600 mt-3">
-                  Completion of a 500-meter suspension bridge, enhancing
-                  connectivity over the river and providing a crucial link for
-                  the local transportation network.
-                </p>
-              </div>
-              <button className="border border-black hover:bg-black hover:text-white duration-500   rounded-full px-5 py-2 mt-10 flex items-center">
-                Learn More <GoArrowUpRight className="font-bold text-xl" />
-              </button>
-            </div>
-            <div className="p-10 border hover:border-black duration-1000 bg-white">
-              <Image
-                src={buildings}
-                className="w-24 mb-20"
-                alt="Building"
-              ></Image>
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900">
-                  Building Construction
-                </h3>
-                <p className="text-lg text-gray-600 mt-3">
-                  Our construction services are designed to create beautiful,
-                  functional, and sustainable homes with a high level of safety
-                  and comfort.
-                </p>
-              </div>
-              <button className="border border-black hover:bg-black hover:text-white duration-500   rounded-full px-5 py-2 mt-10 flex items-center">
-                Learn More <GoArrowUpRight className="font-bold text-xl" />
-              </button>
+          </div>
+
+          <div class="rounded overflow-hidden shadow-lg my-2">
+            <img
+              class="w-full h-60"
+              src="https://media.istockphoto.com/id/897664288/photo/worker-at-construction-site-is-fixing-the-form-for-the-beam.jpg?s=612x612&w=0&k=20&c=57HkKCv9CDdPuo4goHqNTIQ7yvK-LYScpKTS4OsYwL4="
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p class="text-grey-darker text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
